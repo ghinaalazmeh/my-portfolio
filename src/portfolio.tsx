@@ -1,5 +1,5 @@
 "use client"
-
+import Head from 'next/head'
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -12,6 +12,11 @@ export default function Component() {
   }
 
   return (
+    <>
+      <Head>
+        <title>Ghina Alazmeh – UI/UX Portfolio</title>
+      </Head>
+      {/* باقي المحتوى */}
     <div className="min-h-screen bg-[#f9faff] overflow-x-hidden">
       {/* خلفية صفراء */}
       <div className="absolute top-0 right-0 w-[50%] h-full z-0">
@@ -276,5 +281,6 @@ export default function Component() {
         </div>
       </section>
     </div>
+      </>
   )
 }
